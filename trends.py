@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # List of keywords to compare
 KEYWORDS = [
-"London",
+    "London",
     "Edinburgh",
     "Manchester",
     "Birmingham",
@@ -141,7 +141,7 @@ def main():
     try:
         # Get Google Trends data
 
-        df = get_google_trend(gprop='youtube', keywords=KEYWORDS, geo='US')
+        df = get_google_trend(gprop='youtube', keywords=KEYWORDS, geo='GB')
         # Drop cities with low values
         df = drop_low_values(df)  
         
